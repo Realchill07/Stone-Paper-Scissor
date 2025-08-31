@@ -10,15 +10,16 @@
   let computerchoice = Computer_Choice();
   const userchoice = 'Rock';
   let result = Result(userchoice, computerchoice);
-  alert(`User's Choice : ${userchoice} \nComputer's choice : ${computerchoice}\nResult : ${result}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`)">⛰️Rock</button>
+  document.querySelector('#R').innerText = `User Choice : ${userchoice} \nComputer choice : ${computerchoice}\nResult : ${result}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`">⛰️Rock</button>
   <button class = "B" onclick = "let Computerchoice = Computer_Choice();
   const Userchoice = 'Paper';
   let _result = Result(Userchoice,Computerchoice);
-  alert (`User's Choice : ${Userchoice} \nComputer's choice : ${Computerchoice}\nResult : ${_result}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`)">📄Paper</button>
+  document.querySelector('#R').innerText = `User Choice : ${Userchoice} \nComputer choice : ${Computerchoice}\nResult : ${_result}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`">📄Paper</button>
   <button class = "B" onclick = "let computerChoice = Computer_Choice();
   const userChoice = 'Scissor';
   let result_ = Result(userChoice,computerChoice);
-  alert (`User's Choice : ${userChoice} \nComputer's choice : ${computerChoice}\nResult : ${result_}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`)">✂️Scissor</button>
+  document.querySelector('#R').innerText = `User Choice : ${userChoice} \nComputer choice : ${computerChoice}\nResult : ${result_}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`">✂️Scissor</button>
+  <h1 id = "R"></h1>
   <script src = "Fair RPS.js"></script>
 </body>
 </html>
