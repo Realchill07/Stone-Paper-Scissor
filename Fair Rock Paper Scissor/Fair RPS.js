@@ -59,3 +59,12 @@ let score = {
   lose : 0,
   tie : 0,
 };
+function End (){
+  localStorage.setItem('score',JSON.stringify(score));
+}
+function start() {
+  score = JSON.parse(localStorage.getItem('score'));
+}
+function Clear(){
+  localStorage.clear();
+}

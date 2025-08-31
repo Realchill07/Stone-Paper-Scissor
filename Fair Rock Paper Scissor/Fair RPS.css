@@ -13,3 +13,11 @@ body{
 #A {
   border-radius : 100000px;  
 }
+.C {
+  border-radius : 20px;
+  width : 300px;
+  height : 70px;
+  font-size : 22px;
+  background-color : rgb(124, 95, 95);
+  cursor : pointer;
+}

@@ -6,7 +6,8 @@
 </head>
 <body>
   <h1> Rock Paper Scissor </h1>
-  <button class="B" onclick="
+  <button class = "C" onclick = "start()">Load save<br>(Use only if a game is saved)</button> <br> <hr>
+  <button class ="B" onclick="
   let computerchoice = Computer_Choice();
   const userchoice = 'Rock';
   let result = Result(userchoice, computerchoice);
@@ -18,7 +19,9 @@
   <button class = "B" onclick = "let computerChoice = Computer_Choice();
   const userChoice = 'Scissor';
   let result_ = Result(userChoice,computerChoice);
-  document.querySelector('#R').innerText = `User Choice : ${userChoice} \nComputer choice : ${computerChoice}\nResult : ${result_}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`">✂️Scissor</button>
+  document.querySelector('#R').innerText = `User Choice : ${userChoice} \nComputer choice : ${computerChoice}\nResult : ${result_}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`">✂️Scissor</button> <br> <hr>
+  <button class = "B" onclick = "End()">Save</button> 
+  <button class = "B" onclick = "Clear();document.querySelector('#R').innerText = ``">Reset</button>
   <h1 id = "R"></h1>
   <script src = "Fair RPS.js"></script>
 </body>
