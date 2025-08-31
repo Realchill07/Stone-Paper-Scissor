@@ -6,70 +6,19 @@
 </head>
 <body>
   <h1> Rock Paper Scissor </h1>
-  <button class = "B"onclick = "let n = Math.random() * 3; let computerchoice; const userchoice = 'Rock'; let result;
-  if (n <= 1) {
-    computerchoice = 'Rock';
-  }
-  else if (n <= 2) {
-    computerchoice = 'Paper';
-  }
-  else {
-    computerchoice = 'Scissor';
-  }
-  if (computerchoice === 'Rock') {
-    result = `It's a tie.`
-  }
-  else if (computerchoice === 'Paper') {
-    result = 'Computer won.'
-  }
-  else {
-    result = 'User won.'
-  }
-  alert (`User's Choice : ${userchoice} \nComputer's choice : ${computerchoice}\nResult : ${result}`)
-  ">⛰️Rock</button>
-  <button class = "B" onclick = "let n = Math.random() * 3; let computerchoice; const userchoice = 'Paper'; let result;
-  if (n <= 1) {
-    computerchoice = 'Rock';
-  }
-  else if (n <= 2) {
-    computerchoice = 'Paper';
-  }
-  else {
-    computerchoice = 'Scissor';
-  }
-  if (computerchoice === 'Rock') {
-    result = `User won.`
-  }
-  else if (computerchoice === 'Paper') {
-    result = `It's a tie.`  
-  }
-  else {
-    result = 'User lost.'
-  }
-  alert (`User's Choice : ${userchoice} \nComputer's choice : ${computerchoice}\nResult : ${result}`)
-  ">📄Paper</button>
-  <button class = "B" onclick = "let n = Math.random() * 3; let computerchoice; const userchoice = 'Scissor'; let result;
-  if (n <= 1) {
-    computerchoice = 'Rock';
-  }
-  else if (n <= 2) {
-    computerchoice = 'Paper';
-  }
-  else {
-    computerchoice = 'Scissor';
-  }
-  if (computerchoice === 'Rock') {
-    result = `Computer won.`
-  }
-  else if (computerchoice === 'Paper') {
-    result = 'User won.'
-  }
-  else {
-    result = `It's a tie.`
-  }
-  alert (`User's Choice : ${userchoice} \nComputer's choice : ${computerchoice}\nResult : ${result}`)
-  ">✂️Scissor</button>
-  <script>
-  </script>
+  <button class="B" onclick="
+  let computerchoice = Computer_Choice();
+  const userchoice = 'Rock';
+  let result = Result(userchoice, computerchoice);
+  alert(`User's Choice : ${userchoice} \nComputer's choice : ${computerchoice}\nResult : ${result}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`)">⛰️Rock</button>
+  <button class = "B" onclick = "let Computerchoice = Computer_Choice();
+  const Userchoice = 'Paper';
+  let _result = Result(Userchoice,Computerchoice);
+  alert (`User's Choice : ${Userchoice} \nComputer's choice : ${Computerchoice}\nResult : ${_result}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`)">📄Paper</button>
+  <button class = "B" onclick = "let computerChoice = Computer_Choice();
+  const userChoice = 'Scissor';
+  let result_ = Result(userChoice,computerChoice);
+  alert (`User's Choice : ${userChoice} \nComputer's choice : ${computerChoice}\nResult : ${result_}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`)">✂️Scissor</button>
+  <script src = "Fair RPS.js"></script>
 </body>
 </html>
