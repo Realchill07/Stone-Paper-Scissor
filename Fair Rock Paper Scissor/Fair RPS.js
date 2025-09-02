@@ -67,4 +67,5 @@ function start() {
 }
 function Clear(){
   localStorage.clear();
+  window.location.reload();
 }

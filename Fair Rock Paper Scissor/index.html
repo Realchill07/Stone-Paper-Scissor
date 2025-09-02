@@ -6,20 +6,28 @@
 </head>
 <body>
   <h1> Rock Paper Scissor </h1>
-  <button class = "C" onclick = "start()">Load save<br>(Use only if a game is saved)</button> <br> <hr>
+  <button class = "C" onclick = "start()">Load save<br>(Use only if a game is saved)</button> <br>
+  <h1 id = "A"></h1>
+  <hr>
   <button class ="B" onclick="
   let computerchoice = Computer_Choice();
   const userchoice = 'Rock';
   let result = Result(userchoice, computerchoice);
-  document.querySelector('#R').innerText = `User Choice : ${userchoice} \nComputer choice : ${computerchoice}\nResult : ${result}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`">⛰️Rock</button>
+  document.querySelector('#R').innerText = `User Choice : ${userchoice} \nComputer choice : ${computerchoice}\nResult : ${result}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`">
+  <img src = "Images/Stone.png" alt = "Rock" class = "I">
+  </button>
   <button class = "B" onclick = "let Computerchoice = Computer_Choice();
   const Userchoice = 'Paper';
   let _result = Result(Userchoice,Computerchoice);
-  document.querySelector('#R').innerText = `User Choice : ${Userchoice} \nComputer choice : ${Computerchoice}\nResult : ${_result}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`">📄Paper</button>
+  document.querySelector('#R').innerText = `User Choice : ${Userchoice} \nComputer choice : ${Computerchoice}\nResult : ${_result}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`">
+  <img src = "Images/Paper.png" alt = "Paper" class = "I">
+  </button>
   <button class = "B" onclick = "let computerChoice = Computer_Choice();
   const userChoice = 'Scissor';
   let result_ = Result(userChoice,computerChoice);
-  document.querySelector('#R').innerText = `User Choice : ${userChoice} \nComputer choice : ${computerChoice}\nResult : ${result_}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`">✂️Scissor</button> <br> <hr>
+  document.querySelector('#R').innerText = `User Choice : ${userChoice} \nComputer choice : ${computerChoice}\nResult : ${result_}\nWin score : ${score.win}\nLose score : ${score.lose}\nTie score : ${score.tie}`">
+  <img src = "Images/Scissors.png" alt = "Scissors" class = "I">
+  </button> <br> <hr>
   <button class = "B" onclick = "End()">Save</button> 
   <button class = "B" onclick = "Clear();document.querySelector('#R').innerText = ``">Reset</button>
   <h1 id = "R"></h1>
